@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package calender;
+option go_package = "github.com/kasattejaswi/grpcserverex/calender";
+
+service CalenderService {
+    rpc GetDate(DateRequest) returns (DateResponse){}
+}
+
+service GreeterService {
+    rpc GetGreeting(GreetingRequest) returns (GreetingResponse){}
+}
+
+message DateRequest {
+    string date = 1;
+}
+
+message DateResponse {
+    string date = 1;
+}
+
+message GreetingRequest {
+    string name = 1;
+}
+
+message GreetingResponse {
+    string greeting = 1;
+}
+
