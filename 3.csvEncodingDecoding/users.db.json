@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "fname": "Tejaswi",
+            "lname": "Kasat",
+            "age": 24,
+            "username": "Tejaswi Kasat",
+            "password": "changeit",
+            "email": "kasatejaswi@gmail.com"
+        },
+        {
+            "id": 2,
+            "fname": "Tejaswi",
+            "lname": "Kasat",
+            "age": 24,
+            "username": "Tejaswi Kasat",
+            "password": "change,it",
+            "email": "kasatejaswi@gmail.com"
+        },
+        {
+            "id": 3,
+            "fname": "Tejaswi",
+            "lname": "Kasat",
+            "age": 24,
+            "username": "Tejaswi Kasat",
+            "password": "chan\"ge\"it",
+            "email": "kasatejaswi@gmail.com"
+        }
+    ],
+    "type": "Simple"
+}
