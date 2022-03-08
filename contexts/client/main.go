@@ -6,14 +6,15 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
 )
 
 // Client example using context, see server code for server example
 
 func main() {
 	ctx := context.Background()
-	// ctx, cancel := context.WithTimeout(ctx, time.Second)
-	// defer cancel()
+	ctx, cancel := context.WithTimeout(ctx, time.Second)
+	defer cancel()
 	req, err := http.NewRequest("GET", "http://localhost:9898", nil)
 	if err != nil {
 		log.Fatal(err)
