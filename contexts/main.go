@@ -13,7 +13,7 @@ func main() {
 	ctx := context.Background()
 	ctx, cancel := context.WithTimeout(ctx, time.Second)
 	defer cancel()
-	mySleepAndTalk(ctx, 5*time.Second, "Hello")
+	mySleepAndTalk(ctx, 5*time.Second, "Hello, world")
 }
 
 func mySleepAndTalk(ctx context.Context, d time.Duration, msg string) {
