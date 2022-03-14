@@ -1,0 +1,16 @@
+body {
+    margin: 2em;
+}
+
+#head {
+    margin-bottom: 1em;
+}
+
+#head > h3 {
+    display: inline;;
+}
+
+#menu {
+    display: inline;
+    float: right;
+}

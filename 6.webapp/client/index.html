@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+        <title>My Webapp</title>
+    </head>
+    <body>
+        <div id="head">
+            <h3>My Webapp</h3>
+            <div id="menu">
+                <a href="index.html">Home</a>
+                <a href="users.html">Users</a>
+                <a href="books.html">Books</a>
+            </div>
+        </div>
+        <div id="main">
+            <form action="http://localhost:5001/users/" method="POST">
+                <label style="display: block;" for="username"
+                    >Username:
+                    <input type="text" id="username" name="username" />
+                </label>
+                <label style="display: block;" for="password"
+                    >Password:
+                    <input type="password" id="password" name="password" />
+                </label>
+                <button style="display: block;" type="button" onclick="addUser(event)">Add user</button>
+            </form>
+            <h3>Total users: <span id="users-count"></span></h3>
+        </div>
+    </body>
+</html>
