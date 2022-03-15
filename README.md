@@ -13,3 +13,4 @@ Each topic is defined with the folder name and its respective examples will be i
 | CSV encoding and decoding | 3.csvEncodingDecoding |
 | Basic HTTP server | 4.httpServer |
 | Restful API service | 5.restApiService |
+| Simple HTML Webapp | 6.webapp |
